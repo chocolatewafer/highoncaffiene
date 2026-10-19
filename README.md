@@ -29,3 +29,9 @@ npm run model      # rebuild public/models/machine.glb from blender/machine.py (
 | Café still frame (Higgsfield, Soul Cinema) | `public/img/cafe.jpg` |
 
 To change the scroll story, edit the `data-a` / `data-b` ranges on each `.beat` in `index.html` and the matching `KEYS` camera stops in `src/scene.js`.
+
+## Hosting
+
+Live at **https://highoncaffiene.com**, served by GitHub Pages from this repo.
+Every push to `main` rebuilds and publishes the site (see `.github/workflows/pages.yml`) in about a minute.
+`public/CNAME` tells GitHub which domain to use. The DNS records are at Hostinger: four `A` records for `@` that point to GitHub, and a `www` record that points to `chocolatewafer.github.io`.
