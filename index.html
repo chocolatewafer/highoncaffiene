@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sparsh Nidhi — Software Developer</title>
+  <meta name="description" content="Sparsh Nidhi — software developer building mobile apps, agentic delivery pipelines and AI assistants. Bengaluru, from Kathmandu." />
+  <meta name="theme-color" content="#090504" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23120a07'/%3E%3Cpath d='M18 24h24v14a12 12 0 0 1-24 0z' fill='%23d9a35f'/%3E%3Cpath d='M42 28h4a5 5 0 0 1 0 10h-4' stroke='%23d9a35f' stroke-width='3' fill='none'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- ============ LOADER: the boiler preheats while the model loads ============ -->
+  <div id="loader" aria-live="polite">
+    <div class="ld-top"><span>S/N</span><span>PORTFOLIO — 2026</span></div>
+    <div class="ld-frame">
+      <i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+      <svg class="ld-gauge" viewBox="-110 -110 220 220" aria-hidden="true">
+        <circle r="100" class="ld-ring" />
+        <g class="ld-ticks"></g>
+        <path class="ld-arc" d="" />
+        <line class="ld-needle" x1="0" y1="10" x2="0" y2="-78" />
+        <circle r="5" class="ld-hub" />
+      </svg>
+      <div class="ld-read">
+        <span class="ld-label">PREHEATING BOILER</span>
+        <span class="ld-bar"><b id="ldBar">0.0</b> BAR</span>
+      </div>
+      <div class="ld-meta"><span>93 °C</span><span id="ldPct">0%</span><span>18 g · 36 g</span></div>
+    </div>
+    <div class="ld-enter">
+      <button id="enterSound" class="btn-enter">Enter with sound</button>
+      <button id="enterQuiet" class="btn-quiet">Enter quietly</button>
+    </div>
+  </div>
+
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="grain-veil" aria-hidden="true"></div>
+
+  <!-- ============ NAV (crox style boxes) ============ -->
+  <header class="nav">
+    <a href="#top" class="nav-logo" data-link>SPARSH NIDHI</a>
+    <nav class="nav-links">
+      <a href="#about" data-link>About</a>
+      <a href="#log" data-link>Brew Log</a>
+      <a href="#work" data-link>Work</a>
+      <a href="#lab" data-link>Lab</a>
+      <a href="#contact" data-link class="nav-cta">Grab a coffee <span>→</span></a>
+    </nav>
+  </header>
+
+  <!-- left rail, kinoria style -->
+  <aside class="rail" aria-hidden="true">
+    <span class="rail-name">SN — 2026</span>
+    <ol class="rail-list">
+      <li data-sec="film">00 Shot</li>
+      <li data-sec="about">01 About</li>
+      <li data-sec="log">02 Log</li>
+      <li data-sec="work">03 Work</li>
+      <li data-sec="lab">04 Lab</li>
+      <li data-sec="contact">05 Coffee</li>
+    </ol>
+    <button class="rail-sound" id="soundBtn" aria-label="Toggle sound"><i></i><i></i><i></i><i></i></button>
+  </aside>
+
+  <main id="top">
+    <!-- ============ FILM: pinned scroll story over the 3D machine ============ -->
+    <section id="film" class="film">
+      <div class="film-stage">
+        <!-- beat 0: title -->
+        <div class="beat b-title" data-a="0" data-b="0.085" data-first>
+          <div class="t-meta">
+            <span>Software Developer (SDE-1)</span>
+            <span>Mobile &amp; Agentic Systems</span>
+            <span>Bengaluru ← Kathmandu</span>
+          </div>
+          <div class="badge-circle"><b>9</b><span>bars of<br />pressure</span></div>
+          <h1 class="t-huge"><span class="ln"><span>Sparsh Nidhi</span></span></h1>
+          <div class="t-cue"><span class="dot"></span>Scroll to pull a shot</div>
+        </div>
+
+        <!-- beat 1 -->
+        <div class="beat b-center" data-a="0.1" data-b="0.27">
+          <h2 class="t-big"><span class="ln"><span>Nine bars</span></span><span class="ln"><span>of pressure</span></span></h2>
+          <p class="t-sub"><span>One app</span><span>Two stores</span><span>No retries</span></p>
+          <p class="t-small">I joined Petyosa as an intern in May 2025 and went full-time in October.<br />I shipped its app to the Play Store and the App Store: features, backend, builds and approvals.</p>
+        </div>
+
+        <!-- beat 2: list, kinoria style -->
+        <div class="beat b-list" data-a="0.29" data-b="0.46">
+          <div class="bl-left">
+            <span class="kicker">01 — The grind</span>
+            <p>The whole app is mine,<br />end to end.</p>
+          </div>
+          <ul class="bl-items">
+            <li>Capacitor apps</li>
+            <li>Native Android &amp; iOS</li>
+            <li>Store releases</li>
+            <li>Admin panels</li>
+            <li>Backends &amp; APIs</li>
+            <li>Testing &amp; builds</li>
+          </ul>
+        </div>
+
+        <!-- beat 3 -->
+        <div class="beat b-split" data-a="0.47" data-b="0.64">
+          <span class="kicker">02 — Extraction</span>
+          <h2 class="t-big left"><span class="ln"><span>Agents do</span></span><span class="ln"><span>the pouring</span></span></h2>
+          <p class="t-body">Since February 2026 I have run an end-to-end agentic pipeline, with Codex, Claude, Grok and Gemini taking work from code and PR review to merge, test, server deploy and store release. I build the pipeline, and the pipeline writes the code.</p>
+        </div>
+
+        <!-- beat 4 -->
+        <div class="beat b-split right" data-a="0.66" data-b="0.81">
+          <span class="kicker">03 — Crema</span>
+          <h2 class="t-big left"><span class="ln"><span>The part</span></span><span class="ln"><span>people see</span></span></h2>
+          <p class="t-body">Pet Buddy is an in-app AI assistant that uses RAG and rule-based checks to tell pet parents when a vaccination is due. Petyosa Sparsh is the partner portal I lead. I also go out to meet partners in the field and come back with fixes.</p>
+        </div>
+
+        <!-- beat 5 -->
+        <div class="beat b-center" data-a="0.84" data-b="1.01">
+          <span class="kicker">04 — Origin</span>
+          <h2 class="t-big mid"><span class="ln"><span>Ground in Kathmandu</span></span><span class="ln"><span>Brewed in Bengaluru</span></span></h2>
+        </div>
+      </div>
+
+      <!-- live readout, bottom right -->
+      <div class="readout" aria-hidden="true">
+        <div class="ro-head">Shot status</div>
+        <div class="ro-row"><span>Pressure</span><i></i><b id="roBar">0.0 bar</b></div>
+        <div class="ro-row"><span>Shot time</span><i></i><b id="roTime">00:00</b></div>
+        <div class="ro-row"><span>Yield</span><i></i><b id="roYield">0 g</b></div>
+        <div class="ro-row"><span>Water</span><i></i><b>93 °C</b></div>
+        <div class="ro-bar"><span id="roProg"></span></div>
+      </div>
+      <div class="hint-click" aria-hidden="true">Click the machine for steam</div>
+    </section>
+
+    <!-- ============ PAUSE: one still frame, kinoria style ============ -->
+    <section id="pause" class="pause">
+      <div class="pause-stage">
+        <figure class="pause-frame">
+          <img src="./img/cafe.jpg" srcset="./img/cafe-sm.jpg 1280w, ./img/cafe.jpg 2048w" sizes="100vw" alt="A single espresso cup on a dark café counter at night" />
+        </figure>
+        <p class="pause-text" aria-label="it only takes one shot"><span>it</span><span>only</span><span>takes</span><span>one</span><span>shot</span></p>
+        <span class="pause-cap">Frame 01 — 23:41 · Bengaluru</span>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT: crox paper section ============ -->
+    <section id="about" class="paper">
+      <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="meta-row"><span>About</span><span>Bengaluru, India</span><span>Est. 2019</span></div>
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="kicker dark">Mechanics → Software → Agents</span>
+          <h2 class="h-display reveal">Engineer who ships the whole cup.</h2>
+          <p class="lead reveal">I like new technology, especially computer science, AI and robotics, and I keep looking for new ideas to learn. I solve problems, lead group discussions and manage projects. I started out building robots in Kathmandu, and now I ship mobile apps and agentic systems in Bengaluru.</p>
+          <a href="./Sparsh_Nidhi_CV.pdf" class="btn-solid" target="_blank" rel="noopener">Read the CV <span>→</span></a>
+        </div>
+        <div class="about-right">
+          <div class="wire-box">
+            <span class="wire-tag">Studio / Bengaluru</span>
+            <canvas id="wire" aria-label="Rotating wireframe of an espresso cup"></canvas>
+          </div>
+          <div class="spec">
+            <h3>Spec sheet</h3>
+            <div class="spec-row"><span>Role</span><i></i><b>SDE-1, Petyosa</b></div>
+            <div class="spec-row"><span>Apps in stores</span><i></i><b>Android + iOS</b></div>
+            <div class="spec-row"><span>Agents on the line</span><i></i><b>4</b></div>
+            <div class="spec-row"><span>Roles held</span><i></i><b>7</b></div>
+            <div class="spec-row"><span>Robots built</span><i></i><b>Soccer · War · Race</b></div>
+            <div class="spec-row"><span>Degree</span><i></i><b>B.E. Computer Eng.</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Skills">
+      <div class="mq-track">
+        <span>Capacitor</span><span>Android &amp; iOS</span><span>Agentic pipelines</span><span>RAG assistants</span><span>DevOps</span><span>Django · DRF</span><span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span><span>PyQt · PySide</span><span>C / C++</span><span>Blender</span><span>Maya</span>
+      </div>
+    </div>
+
+    <!-- ============ BREW LOG: experience ============ -->
+    <section id="log" class="dark-sec">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">02 — Brew log</span>
+          <h2 class="h-display reveal">Every role, in the order it was poured.</h2>
+        </div>
+        <p class="sec-note">Open a row to see what went into it.</p>
+      </div>
+      <div class="log" id="logList"></div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="dark-sec">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">03 — Selected work</span>
+          <h2 class="h-display reveal">Things I built and shipped.</h2>
+        </div>
+        <a class="btn-line" href="https://github.com/chocolatewafer" target="_blank" rel="noopener">All on GitHub <span>↗</span></a>
+      </div>
+      <div class="cards" id="cards"></div>
+
+      <div class="menu">
+        <div class="menu-head">
+          <h3>Today’s menu <em>— fresh from GitHub</em></h3>
+          <span class="menu-status" id="menuStatus">Brewing…</span>
+        </div>
+        <ol class="menu-list" id="menuList"></ol>
+      </div>
+    </section>
+
+    <!-- ============ LAB: the six coffee figures ============ -->
+    <section id="lab" class="lab">
+      <div class="sec-head">
+        <div>
+          <span class="kicker">04 — Brew lab</span>
+          <h2 class="h-display reveal">I take things apart to see how they work.</h2>
+        </div>
+        <p class="sec-note">Six coffee makers drawn part by part. Tap the panel to open it, tap the machine to take it apart, then brew.</p>
+      </div>
+      <div class="lab-tabs" role="tablist" id="labTabs">
+        <button role="tab" data-src="espresso-machine" aria-selected="true">Espresso</button>
+        <button role="tab" data-src="drip-machine">Drip</button>
+        <button role="tab" data-src="pour-over">Pour-over</button>
+        <button role="tab" data-src="french-press">French press</button>
+        <button role="tab" data-src="percolator">Percolator</button>
+        <button role="tab" data-src="single-cup">Single cup</button>
+      </div>
+      <div class="lab-window">
+        <div class="lab-bar">
+          <span class="lab-dots"><i></i><i></i><i></i></span>
+          <span class="lab-path" id="labPath">lab / espresso-machine.html</span>
+          <a class="lab-open" id="labOpen" href="./lab/espresso-machine.html" target="_blank" rel="noopener">Open full ↗</a>
+        </div>
+        <iframe id="labFrame" title="Interactive coffee maker" loading="lazy" data-src="./lab/espresso-machine.html"></iframe>
+      </div>
+    </section>
+
+    <!-- ============ SCHOOL & OFF THE CLOCK ============ -->
+    <section id="school" class="paper slim">
+      <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cols3">
+        <div class="col">
+          <h3 class="col-h">Education</h3>
+          <div class="ed"><span>2026</span><b>Microdegree in AI &amp; Machine Learning</b><em>Fusemachines</em></div>
+          <div class="ed"><span>2019 — 2024</span><b>Bachelor’s in Computer Engineering</b><em>Kathmandu Engineering College</em></div>
+          <div class="ed"><span>2017 — 2019</span><b>Cambridge AS &amp; A Level</b><em>Saint Xavier’s College</em></div>
+        </div>
+        <div class="col">
+          <h3 class="col-h">Leading</h3>
+          <div class="ed"><span>2023 — 2024</span><b>President, Robotics Club of KEC</b><em>Robots for Yantra, Dristi, RoboSoccer, Robowar, Roborace. Bootcamps for students in rural areas.</em></div>
+          <div class="ed"><span>2022 — 2023</span><b>Event &amp; project manager</b><em>Ran budgets and teams; co-organised Techno Cruise with IIT Kanpur.</em></div>
+        </div>
+        <div class="col dark-col">
+          <h3 class="col-h">Off the clock</h3>
+          <ul class="hobbies"><li>3D animation</li><li>Coding</li><li>Basketball</li><li>Painting</li><li>Guitar</li></ul>
+          <p class="quip">“Have you tried turning it off and on again?”</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT over the machine ============ -->
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <span class="kicker">05 — Last call</span>
+        <h2 class="h-giant reveal"><span>Let’s grab</span><span>a coffee.</span></h2>
+        <div class="contact-links">
+          <a href="mailto:sparsh123nidhi@gmail.com" class="cl"><span>Email</span><b>sparsh123nidhi@gmail.com</b></a>
+          <a href="https://www.linkedin.com/in/sparshnidhi-74381915a" target="_blank" rel="noopener" class="cl"><span>LinkedIn</span><b>/in/sparshnidhi</b></a>
+          <a href="https://github.com/chocolatewafer" target="_blank" rel="noopener" class="cl"><span>GitHub</span><b>@chocolatewafer</b></a>
+          <a href="./Sparsh_Nidhi_CV.pdf" target="_blank" rel="noopener" class="cl"><span>CV</span><b>Sparsh_Nidhi_CV.pdf</b></a>
+        </div>
+      </div>
+      <footer class="foot">
+        <span>© 2026 Sparsh Nidhi</span>
+        <span>Modelled in Blender · Rendered with three.js</span>
+        <a href="#top" data-link>Back to the first shot ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
