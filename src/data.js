@@ -105,7 +105,7 @@ export const WORK = [
     hot: true,
     wide: true,
     art: 'pipe',
-    text: 'Four AI coding agents work in one pipeline that covers code, PRs, review, merge, test, server deploy and store release. I design the pipeline, not each line.',
+    text: 'Four AI coding agents work in one pipeline that covers code, PRs, review, merge, test, server deploy and store release. I design it, set its quality checks and own every release.',
     chips: ['Codex', 'Claude', 'Grok', 'Gemini', 'CI/CD'],
   },
   {
